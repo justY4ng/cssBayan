@@ -1,0 +1,167 @@
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+:focus,
+:active {
+   outline: none;
+}
+a:focus,
+a:active {
+   outline: none;
+}
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+html,
+body {
+   height: 100%;
+   width: 100%;
+   background: #F5F5DC;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 16px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+input::-ms-clear {
+   display: none;
+}
+button {
+   cursor: pointer;
+}
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+a,
+a:visited {
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: none;
+}
+ul li {
+   list-style: none;
+}
+img {
+   vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: inherit;
+}
+/* =============================================== */
+body {
+   font-family: 'Raleway';
+   color: black;
+}
+[class*="__container"] {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0px 10px;
+}
+.title {
+   padding: 20px 0;
+   font-size: 40px;
+   font-weight: 800;
+}
+.accordion {
+   color: blueviolet;
+   transition: color 0.5s ease 0s;
+}
+.accordion:hover {
+   color: black;
+}
+.accordion li {
+   width: 100%;
+   border-top: 1px solid black;
+}
+.accordion li label {
+   display: flex;
+   flex-wrap: wrap;
+   column-gap: 10px;
+   align-items: center;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   font-size: 24px;
+   cursor: pointer;
+}
+.accordion span {
+   flex: 1 1 85%;
+}
+.accordion label .icon {
+   position: relative;
+   height: 30px;
+   width: 30px;
+   color: black;
+   font-size: 25px;
+   transition: all 0.3s ease 0s;
+}
+.accordion label input[type="radio"]:checked ~ span {
+   color: black;
+}
+.accordion label .icon i {
+   display: none;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.accordion:hover label .icon i {
+   display: inline-block;
+}
+input[type="radio"]:hover ~ .icon {
+   transform: rotate(45deg);
+}
+input[type="radio"]:checked ~ .icon {
+   transform: rotate(45deg);
+}
+input[type="radio"] {
+   display: none;
+}
+.accordion .meme {
+   position: relative;
+   flex: 1 1 auto;
+   text-align: center;
+   max-height: 0;
+   overflow: hidden;
+   transform: scale(0);
+   transition: all 0.5s cubic-bezier(0.39, 0.58, 0.57, 1) 0s;
+}
+input[type="radio"]:hover ~ .meme {
+   max-height: 400px;
+   padding: 15px 0;
+   transform: scale(1);
+}
+input[type="radio"]:checked ~ .meme {
+   max-height: 400px;
+   padding: 15px 0;
+   transform: scale(1);
+}
+.meme img {
+   max-height: 400px;
+   max-width: 400px;
+}
