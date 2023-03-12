@@ -165,3 +165,41 @@ input[type="radio"]:checked ~ .meme {
    max-height: 400px;
    max-width: 400px;
 }
+@media(max-width: 820.1px) {
+   .title {
+      padding: 20px 0;
+      font-size: 30px;
+      font-weight: 800;
+   }
+   .accordion {
+      color: black;
+   }
+   .accordion li label {
+      font-size: 20px;
+   }
+   .accordion label .icon i {
+      display: inline-block;
+      font-size: 20px;
+   }
+}
+@media(max-width: 320.1px) {
+   .title {
+      padding: 20px 0;
+      font-size: 26px;
+      font-weight: 800;
+   }
+   .accordion {
+      color: black;
+   }
+   .accordion li label {
+      font-size: 18px;
+   }
+   .accordion label .icon i {
+      display: inline-block;
+      font-size: 18px;
+   }
+   .meme img {
+      max-height: 300px;
+      max-width: 300px;
+   }
+}
